@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>习概导论选择题（后有多选）</title>
+    <link rel="stylesheet" href="timu.css">
+</head>
+<body>
+    <!-- 页面顶部标题 -->
+    <header class="header">
+        <h1>习概导论选择题（后有多选）</h1>
+    </header>
+
+    <!-- 答题统计信息栏 -->
+    <div class="stats-bar">
+        <p>题目进度： <span id="answered-count">0/0</span></p>
+        <p>总得分： <span id="score">0</span></p>
+        <p>正确率： <span id="accuracy">0%</span></p>
+    </div>
+
+    <!-- 题库选择器 -->
+    <div class="quiz-selector">
+        <label for="quiz-select">选择题库：</label>
+        <select id="quiz-select">
+            <option value="">请选择题库</option>
+            <option value="0">导论</option>
+            <option value="1">第一章</option>
+            <option value="2">第二章</option>
+            <option value="3">第三章</option>
+            <option value="4">第四章</option>
+            <option value="5">第五章</option>
+            <option value="6">第六章</option>
+            <option value="7">第七章</option>
+            <option value="8">第八章</option>
+            <option value="9">第九章</option>
+            <option value="10">第十章</option>
+            <option value="11">第十一章</option>
+            <option value="12">第十二章</option>
+            <option value="13">第十三章</option>
+            <option value="14">第十四章</option>
+            <option value="15">第十五章</option>
+            <option value="16">第十六章</option>
+            <option value="17">第十七章</option>
+        </select>
+        <button id="load-quiz-button">加载题库</button>
+    </div>
+
+    <!-- 单个题目容器 -->
+    <div class="question-container" id="question-container"></div>
+
+    <!-- 提交按钮 -->
+    <button id="submit-answer-button">提交答案</button>
+
+    <!-- 倒计时显示 -->
+    <div class="countdown-timer" id="countdown-timer">
+        <span class="countdown-text"></span>
+        <div class="countdown-progress"></div>
+    </div>
+
+    <!-- 反馈信息 -->
+    <div class="feedback" id="feedback"></div>
+
+    <script src="timu.js"></script>
+</body>
+</html>
