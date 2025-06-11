@@ -19,7 +19,7 @@ const quizFiles = {
     14: '14.json',
     15: '15.json',
     16: '16.json',
-    
+    17: '17.json',
 };
 
 // 初始化变量
